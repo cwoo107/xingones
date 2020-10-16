@@ -1,0 +1,185 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= stub "active_admin"
+ */
+
+body {
+    color: #1d2d35 !important;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", Sans-Serif !important;
+    font-size: 1.7rem;
+    background-color: whitesmoke;
+}
+
+nav {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.9rem;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+h1 {
+    font-size: 8rem !important;
+    font-weight: 800;
+    font-family:  "Roboto Condensed", "Roboto", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+h2{
+    font-size: 4rem !important;
+    font-weight: 600;
+    font-family: "Roboto Condensed", "Roboto", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+h3 {
+    font-size: 3rem !important;
+    font-weight: 400;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+h4 {
+    padding-top: -15px;
+    font-size: 2.3rem !important;
+    font-weight: 200;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+#red-link a:link {
+    color: whitesmoke;
+}
+
+
+#main-header {
+    margin-top: -16px;
+    min-height: 300px;
+    width: auto;
+    background: #ee3e2c;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+#main-header .my-4 {
+    background-color:white;
+}
+
+#about-image {
+    background: url('IMG_5550-2.jpeg' ) no-repeat center;
+    background-size: cover;
+}
+
+.green-stripe {
+    background: url("web_xingones-12.svg") no-repeat right;
+    background-width: auto;
+    height: 1550px;
+}
+
+#sub-header {
+    color: #ee3e2c;
+
+}
+
+.single-page-header {
+    color: #ee3e2c;
+}
+
+.navbar-sticky-bottom {
+    margin-top: 50px;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.navbar-nav {
+    font-family: "Roboto Condensed", "Roboto", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+
+.nav-link {
+    margin-right: 25px;
+    font-weight: 500;
+    color: #ee3e2c !important;
+}
+
+.nav-link:hover {
+    color: #f47473 !important;
+}
+
+.green {
+    font-weight: 500;
+    color: #248351 !important;
+}
+
+.green:hover {
+    color: #91c1a8 !important;
+}
+.card {
+    margin-top: 15px;
+    background-color: #fbfbf8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card:hover {
+    box-shadow: 0 3px 9px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.22);
+}
+
+
+
+.btn-danger {
+    background-color: #ee3e2c !important;
+    border-color: #ee3e2c;
+}
+.btn-danger:focus {
+    color: #333;
+    background-color: #D02411 !important;
+    border-color: #D02411;
+}
+.btn-danger:hover {
+    color: #333;
+    background-color: #D02411 !important;
+    border-color: #D02411;
+}
+.btn-danger:active {
+    color: #333;
+    background-color: #ee3e2c !important;
+    border-color: #D02411;
+}
+
+.btn-outline-light{
+    border-width: 10px !important;
+    font-family: "Roboto Condensed", "Roboto", "Avenir", "Helvetica Neue", Sans-Serif !important;
+}
+.btn-outline-light:focus {
+    color: #ee3e2c !important;
+}
+.btn-outline-light:hover {
+    color: #ee3e2c !important;
+}
+.btn-outline-light:active {
+    color: #ee3e2c !important;
+}
+
+.navbar-orange {
+    background-color: #ee3e2c !important;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+}
+
+.nav-link:hover {
+    background-color: whitesmoke !important;
+    color: #ee3e2c !important;
+}

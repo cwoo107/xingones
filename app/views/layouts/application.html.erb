@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xingones2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </head>
+  <nav class="navbar navbar-orange navbar-expand-lg navbar-light bg-light">
+    <div class="d-lg-none" >
+      <%= link_to image_tag("web_xingones-03.svg", height: "auto", width: '150px', :style => 'margin-top: -10px; margin-left: 20px'), root_path %>
+    </div>
+    <div class="d-none d-lg-block" >
+      <%= link_to image_tag("web_xingones-03.svg", height: "auto", width: '100px', :style => 'margin-top: -10px;margin-left: 20px'), root_path %>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <h2 class="navbar-toggler-icon"></h2>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/"></a>
+        </li>
+      </ul>
+      <div class="form-inline my-6 my-lg-0">
+        <div class="d-lg-none" style="font-size: 5rem;" >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <%= link_to 'Menu', "/pages/menu", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Our Story', "/pages/our_story", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Order Now', root_path, :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Locations', "/pages/locations", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%=image_tag("web_xingones-04.svg", width: '50px') %>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block" style="margin-top: -15px">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <%= link_to 'Menu', "/pages/menu", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Our Story', "/pages/our_story", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Order Now', root_path, :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Locations', "/pages/locations", :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%=image_tag("web_xingones-04.svg", width: '50px') %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <body>
+  <%= yield %>
+  </body>
+  <nav class="navbar navbar-orange navbar-sticky-bottom navbar-expand-lg navbar-light bg-light">
+
+    <div class="form-inline mx-auto">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link green" href="https://www.facebook.com/profile.php?id=100013469014512&ref=br_rs">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link green" href="https://www.instagram.com/xingonesoakland/">Instagram</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link green" href="https://twitter.com/xingonesoakland?lang=en">Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</html>
