@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "pages#show", page: "home"
-  get "/pages/:page" => "pages#show"
+  get "/:page" => "pages#show"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
