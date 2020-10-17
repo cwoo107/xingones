@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ExampleReflex < ApplicationReflex
-  delegate :current_user, to: :connection
   # Add Reflex methods in this file.
   #
   # All Reflex instances expose the following properties:
