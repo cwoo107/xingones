@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   private
 
   def set_action_cable_identifier
-    cookies.encrypted[:user_id] = current_user&.id
+    cookies.encrypted[:session_id] = session.id.to_s
   end
 end
