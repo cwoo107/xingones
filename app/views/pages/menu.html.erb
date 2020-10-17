@@ -10,6 +10,9 @@
   </div>
 </div>
 <br/>
+<div data-reflex-root=".menu">
+
+<% @inventory = Inventory.all %>
 <div class="container menu">
   <div class="row">
     <div class="col-xl-12">
@@ -37,7 +40,6 @@
         <br/>
         <div class="container-fluid">
           <div class="row">
-            <% @inventory = Inventory.all %>
             <% @inventory[0].each do |item| %>
               <% if @location.nil?  %>
                 <% @locationid = '9E48WV3YMN7AZ' %>
@@ -79,4 +81,4 @@
       </div>
     </div>
   </div>
-</div>
+</div></div>
