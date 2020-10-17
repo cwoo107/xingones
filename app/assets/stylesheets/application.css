@@ -173,6 +173,25 @@ h4 {
     color: #ee3e2c !important;
 }
 
+.btn-outline-danger {
+    color: #ee3e2c;
+    border-color: #ee3e2c;
+    border-width: thick;
+}
+.btn-outline-danger:focus {
+    color: #333;
+    background-color: #ee3e2c !important;
+    border-color: #ee3e2c;
+}
+.btn-outline-danger:hover {
+    background-color: #ee3e2c !important;
+    border-color: #ee3e2c;
+}
+.btn-outline-danger:active {
+    background-color: #ee3e2c !important;
+    border-color: #ee3e2c;
+}
+
 .navbar-orange {
     background-color: #ee3e2c !important;
 }
@@ -184,4 +203,53 @@ h4 {
 .nav-link:hover {
     background-color: whitesmoke !important;
     color: #ee3e2c !important;
+}
+
+.location-image {
+    height: 700px;
+
+}
+
+.location-image .fort-green {
+    background: url("web_xingones-13.svg") no-repeat center;
+    background-size: contain;
+    height: 90%;
+    width: auto;
+}
+
+.location-image .fort-green:hover {
+    background: url("web_xingones-10.svg") no-repeat center;
+    background-size: contain;
+    height: 90%;
+    width: auto;
+}
+
+.location-image .emporium {
+    background: url("web_xingones-09.svg") no-repeat center;
+    background-size: contain;
+    height: 90%;
+    width: auto;
+}
+
+.location-image .emporium:hover {
+    background: url("web_xingones-08.svg") no-repeat center;
+    background-size: contain;
+    height: 90%;
+    width: auto;
+}
+
+.menu {
+
+}
+
+.menu .emporium {
+    background: url("web_xingones-01.svg") center;
+    background-size: cover;
+    height: 900px;
+    width: auto;
+}
+
+.menu .card-body {
+    margin: 50px;
+    background-color: rgba(254, 253, 227, 0.6);
 }
