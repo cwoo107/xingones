@@ -16,31 +16,73 @@
       <% if @location.nil? %>
         <div class="menu-card fort-green">
       <% else %>
-      <div class="menu-card <%= @location %>">
+        <div class="menu-card <%= @location %>">
       <% end %>
-        <div class="card-body">
-          <div class="text-center">
-            <button class="btn btn-lg btn-outline-danger <% if @location.nil? %>active<% elsif @location == 'fort-green' %>active<% end %>" style="font-size: 2rem; font-weight:700; border-radius: 15px"
-                    data-reflex="click->ExampleReflex#toggle"
-                    data-id="fort-green">
-                FORT GREEN
-            </button>
-            &nbsp;
-            <button class="btn btn-lg btn-outline-danger <% if @location == 'emporium' %>active<% end %>" style="font-size: 2rem; font-weight:700; border-radius: 15px"
-                    data-reflex="click->ExampleReflex#toggle"
-                    data-id="emporium">
-                EMPORIUM
-            </button>
+      <div class="card-body">
+        <div class="text-center">
+          <button class="btn btn-lg btn-outline-danger <% if @location.nil? %>active<% elsif @location == 'fort-green' %>active<% end %>"
+                  style="margin-bottom: 15px; font-size: 2rem; font-weight:700; border-radius: 15px"
+                  data-reflex="click->ExampleReflex#toggle"
+                  data-id="fort-green">
+            FORT GREEN
+          </button>
+          &nbsp;
+          <button class="btn btn-lg btn-outline-danger <% if @location == 'emporium' %>active<% end %>"
+                  style="margin-bottom: 15px; font-size: 2rem; font-weight:700; border-radius: 15px"
+                  data-reflex="click->ExampleReflex#toggle"
+                  data-id="emporium">
+            EMPORIUM
+          </button>
+        </div>
+        <br/>
+        <div class="container-fluid">
+          <div class="row">
+            <% @inventory = Inventory.all %>
+            <% @inventory[0].each do |item| %>
+              <% if @location.nil?  %>
+                <% @locationid = '9E48WV3YMN7AZ' %>
+              <% end %>
+              <% if item[:catalog_v1_ids].nil? %>
+              <% else %>
+                <% if item[:catalog_v1_ids][0][:location_id] == @locationid %>
+                  <div class="col-lg-6">
+                    <div class="">
+                      <h3><%= item[:item_data][:name] %></h3>
+                      <p>"Item description will go here. No descriptions present in Squareup"</p>
+                      <% item[:item_data][:variations]&.each do |i| %>
+                        <h5>
+                          <% if i[:item_variation_data][:price_money].nil? %>
+                          <%else %>
+                            <span class="text-left"><%= i[:item_variation_data][:name] %></span>
+                            <span style="float: right">$<%= i[:item_variation_data][:price_money][:amount]/100 %></span>
+
+                          <% end %>
+                        </h5>
+                      <% end %>
+                    </div>
+                    <button class="btn btn-outline-danger " style="font-size: 1.4rem; font-weight:700; border: 0px"
+                    >
+                      ADD TO CART
+                    </button>
+                    <hr  style="
+                    height: 4px;
+                        color: #333; /* old IE */
+                        background-color: #333;">
+                  </div>
+                <% end %>
+              <% end %>
+            <% end %>
           </div>
         </div>
       </div>
+      </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-xl-12">
-      <%= image_tag('website_xingones-05.jpg', width: '100%') %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <%= image_tag('website_xingones-05.jpg', width: '100%') %>
+      </div>
     </div>
   </div>
-</div>

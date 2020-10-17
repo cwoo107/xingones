@@ -24,5 +24,10 @@ class ExampleReflex < ApplicationReflex
 
   def toggle
     @location = element.dataset[:id]
+    if element.dataset[:id] == 'fort-green'
+      @locationid = '9E48WV3YMN7AZ'
+    elsif element.dataset[:id] == 'emporium'
+      @locationid = '6AP8YKJKPM245'
+    end
   end
 end
