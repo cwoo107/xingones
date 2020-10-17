@@ -243,8 +243,15 @@ h4 {
 }
 
 .menu .emporium {
-    background: url("web_xingones-01.svg") center;
-    background-size: cover;
+     background: url("web_xingones-01.svg") center;
+     background-size: contain;
+     height: 900px;
+     width: auto;
+ }
+
+.menu .fort-green {
+    background: url("web_xingones-02.svg") center;
+    background-size: contain;
     height: 900px;
     width: auto;
 }

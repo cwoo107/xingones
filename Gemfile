@@ -58,3 +58,9 @@ gem "stimulus_reflex", "~> 3.3"
 gem 'activeadmin'
 
 gem 'devise'
+
+gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
+
+gem "hiredis"
+
+gem 'redis-session-store'

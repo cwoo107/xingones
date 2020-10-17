@@ -13,13 +13,21 @@
 <div class="container menu">
   <div class="row">
     <div class="col-xl-12">
-      <div class="card emporium">
+      <% if @location.nil? %>
+        <div class="card fort-green">
+      <% else %>
+      <div class="card <%= @location %>">
+      <% end %>
         <div class="card-body">
           <div class="text-center">
-            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px">
+            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px"
+                    data-reflex="click->ExampleReflex#toggle"
+                    data-id="fort-green">
                 FORT GREEN
             </button>
-            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px">
+            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px"
+                    data-reflex="click->ExampleReflex#toggle"
+                    data-id="emporium">
                 EMPORIUM
             </button>
           </div>

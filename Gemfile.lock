@@ -107,6 +107,7 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
+    hiredis (0.6.3)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     inherited_resources (1.11.0)
@@ -199,6 +200,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.2.2)
+    redis-session-store (0.11.3)
+      actionpack (>= 3, < 7)
+      redis (>= 3, < 5)
     regexp_parser (1.8.2)
     responders (3.0.1)
       actionpack (>= 5.0)
@@ -274,11 +278,14 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  hiredis
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
+  redis (>= 4.0)
+  redis-session-store
   sass-rails (>= 6)
   selenium-webdriver
   spring
