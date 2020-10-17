@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c1fe18b-7350-42b0-9bd2-fe00b4059f61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xingones2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xingones2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reflexes/example_reflex.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/reflexes/example_reflex.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/menu.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/menu.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602883096493</updated>
-      <workItem from="1602883104439" duration="16639000" />
+      <workItem from="1602883104439" duration="16805000" />
     </task>
     <servers />
   </component>
