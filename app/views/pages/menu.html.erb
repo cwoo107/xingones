@@ -14,18 +14,19 @@
   <div class="row">
     <div class="col-xl-12">
       <% if @location.nil? %>
-        <div class="card fort-green">
+        <div class="menu-card fort-green">
       <% else %>
-      <div class="card <%= @location %>">
+      <div class="menu-card <%= @location %>">
       <% end %>
         <div class="card-body">
           <div class="text-center">
-            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px"
+            <button class="btn btn-lg btn-outline-danger <% if @location.nil? %>active<% elsif @location == 'fort-green' %>active<% end %>" style="font-size: 2rem; font-weight:700; border-radius: 15px"
                     data-reflex="click->ExampleReflex#toggle"
                     data-id="fort-green">
                 FORT GREEN
             </button>
-            <button class="btn btn-lg btn-outline-danger" style="font-size: 2rem; font-weight:700; border-radius: 15px"
+            &nbsp;
+            <button class="btn btn-lg btn-outline-danger <% if @location == 'emporium' %>active<% end %>" style="font-size: 2rem; font-weight:700; border-radius: 15px"
                     data-reflex="click->ExampleReflex#toggle"
                     data-id="emporium">
                 EMPORIUM

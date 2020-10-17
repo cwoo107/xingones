@@ -173,23 +173,60 @@ h4 {
     color: #ee3e2c !important;
 }
 
-.btn-outline-danger {
+.emporium .btn-outline-danger {
     color: #ee3e2c;
     border-color: #ee3e2c;
     border-width: thick;
 }
-.btn-outline-danger:focus {
-    color: #333;
+.emporium .active {
+    color: white;
+    background-color: #ee3e2c !important;
+    border-color: #ee3e2c;
+    border-width: thick;
+}
+.emporium .btn-outline-danger:focus {
+    color: white;
     background-color: #ee3e2c !important;
     border-color: #ee3e2c;
 }
-.btn-outline-danger:hover {
+.emporium .btn-outline-danger:hover {
+    color: white;
     background-color: #ee3e2c !important;
     border-color: #ee3e2c;
 }
-.btn-outline-danger:active {
+.emporium .btn-outline-danger:active {
+    color: white;
     background-color: #ee3e2c !important;
     border-color: #ee3e2c;
+}
+
+.fort-green .btn-outline-danger {
+    color: #248351;
+    border-color: #248351;
+    border-width: thick;
+}
+
+.fort-green .active {
+    color: white;
+    background-color: #248351 !important;
+    border-color: #248351;
+    border-width: thick;
+}
+
+.fort-green .btn-outline-danger:focus {
+    color: white;
+    background-color: #248351 !important;
+    border-color: #248351;
+}
+.fort-green .btn-outline-danger:hover {
+    color: white;
+    background-color: #248351 !important;
+    border-color: #248351;
+}
+.fort-green .btn-outline-danger:active {
+    color: white;
+    background-color: #248351 !important;
+    border-color: #248351;
 }
 
 .navbar-orange {
@@ -243,15 +280,15 @@ h4 {
 }
 
 .menu .emporium {
-     background: url("web_xingones-01.svg") center;
-     background-size: contain;
+     background: url("web_xingones-01.svg") ;
+     background-size: cover;
      height: 900px;
      width: auto;
  }
 
 .menu .fort-green {
-    background: url("web_xingones-02.svg") center;
-    background-size: contain;
+    background: url("web_xingones-02.svg") ;
+    background-size: cover;
     height: 900px;
     width: auto;
 }
@@ -259,4 +296,16 @@ h4 {
 .menu .card-body {
     margin: 50px;
     background-color: rgba(254, 253, 227, 0.6);
+}
+
+.menu-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
